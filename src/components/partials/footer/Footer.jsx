@@ -9,7 +9,7 @@ import{ArrowUp02Icon} from '@hugeicons/core-free-icons';
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-117 bg-[url('@/assets/images/footer.png')] bg-cover bg-center flex flex-col gap-4 items-center justify-around px-10 py-8 relative">
+      <div className="w-full h-117 bg-[url('@/assets/images/footer.png')] bg-cover bg-center flex flex-col gap-4 items-center justify-around px-10 py-8 mt-10 relative">
         <div className="bg-primary-300 w-22 h-21 rounded-2xl absolute bottom-102 left-29"> <HugeiconsIcon icon={ArrowUp02Icon} size={50} color="white"/> </div>
         <div className=" w-full flex justify-around items-center ">
           <div className="w-71">

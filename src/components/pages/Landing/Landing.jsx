@@ -1,7 +1,10 @@
+import HeroSection from "./componenets/HeroSection"
 
 const Landing = () => {
   return (
-    <div>Landing</div>
+    <div>
+      <HeroSection/>
+    </div>
   )
 }
 
