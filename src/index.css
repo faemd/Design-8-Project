@@ -157,6 +157,10 @@
     @apply font-IRANSansXV  text-2xl font-bold;
     @apply lg:text-5xl;
   }
+   .heading-48-normal {
+    @apply font-IRANSansXV  text-2xl font-normal;
+    @apply lg:text-5xl;
+  }
   .heading-22 {
     @apply font-IRANSansXV  text-[22px] font-semibold;
     @apply lg:text-[22px];
