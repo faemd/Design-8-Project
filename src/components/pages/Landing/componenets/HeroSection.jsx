@@ -19,7 +19,7 @@ const HeroSection = () => {
           سریع و همیشه همراه شما{" "}
         </h3>
       </div>
-      <div className="w-177 h-14 mx-auto my-6">
+      <div className="w-90 h-24 lg:w-177 lg:h-14 mx-auto my-6">
         <p className="body-18 text-center text-neutral-800">
           {" "}
           در وب‌سایت ما می‌توانید دوره‌ها و کلاس‌هایی را پیدا کنید که به شما کمک
@@ -31,22 +31,22 @@ const HeroSection = () => {
         {" "}
         آموزش رو شروع کنیم
       </div>
-      <div className="flex items-center justify-around my-6">
-        <div>
+      <div className="flex flex-col items-center gap-10 lg:gap-0 justify-around my-6 lg:flex-row">
+        <div className="hidden lg:block">
           <img src={heroImageOne} />
         </div>
         <div className="w-57 h-65 bg-primary-200 rounded-3xl heading-18 text-black text-center flex flex-col  items-center justify-center gap-5 ">
           <h4> +1000 </h4>
           <h4> دانشجوی فعال و شاغل در سرتاسر جهان </h4>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <img src={heroImageTwo} />
         </div>
         <div   className="w-57 h-65 bg-neutral-100 rounded-3xl heading-18 text-black text-center flex flex-col  items-center justify-center gap-5 "> 
            <h4 > +20 </h4>
           <h4> سال سابقه آموزش در برنامه نویسی </h4> 
         </div>
-        <div>
+        <div className="hidden lg:block">
           <img src={heroImageThree} />
         </div>
       </div>

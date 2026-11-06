@@ -45,12 +45,12 @@ const Footer = () => {
             <img src={namadImg} />
           </div>
         </div>
-        <div className=" w-full h-14 rounded-xl bg-neutral-dark-300 flex items-center justify-between px-2 caption ">
-          <div className="flex justify-between gap-2">
-            <div className="w-5 h-5 rounded-full bg-transparent border border-white border-solid flex items-center justify-center">
+        <div className=" w-full h-14 rounded-xl bg-neutral-dark-300 flex items-center justify-center lg:justify-between px-2 caption ">
+          <div className="hidden lg:flex lg:justify-between lg:gap-2">
+            <div className="hidden lg:w-5 lg:h-5 lg:rounded-full lg:bg-transparent lg:border lg:border-white lg:border-solid lg:flex lg:items-center lg:justify-center">
               <FooterSign />
             </div>
-            <p className="text-center text-white">
+            <p className="hidden lg:block lg:text-center lg:text-white">
               {" "}
               تمام حقوق مادی و معنوی این طراحی متعلق به امیر محمد خیرابادی
               میباشد{" "}
