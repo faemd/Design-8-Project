@@ -1,22 +1,4 @@
-export const DarkModeNight = () => {
-  return (
-    <svg
-      width="26"
-      height="26"
-      viewBox="0 0 26 26"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M24.75 15.3753C23.2346 16.1845 21.5039 16.6432 19.666 16.6432C13.6963 16.6432 8.85685 11.8038 8.85685 5.83406C8.85685 3.99617 9.31554 2.26542 10.1247 0.750031C4.75124 2.00938 0.75 6.8323 0.75 12.5898C0.75 19.3057 6.19434 24.75 12.9103 24.75C18.6677 24.75 23.4907 20.7488 24.75 15.3753Z"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke="#141B34"
-      />
-    </svg>
-  );
-};
+
 export const FooterSign = () => {
   return (
     <svg

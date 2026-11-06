@@ -177,6 +177,10 @@
     @apply font-IRANSansXV  text-sm font-bold;
     @apply lg:text-base;
   }
+  .body-20 {
+    @apply font-IRANSansXV  text-xl font-normal;
+    
+  }
   .body-16 {
     @apply font-IRANSansXV  text-xs font-normal;
     @apply lg:text-base;
