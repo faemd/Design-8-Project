@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @font-face {
   font-family: "IRANSansXV";
-  src: url("./assets/fonts/IRANSansXV.woff2") format('woff2');
+  src: url("./assets/fonts/IRANSansXV.woff2") format("woff2");
   font-weight: 100 900;
 }
 @layer base {
@@ -9,9 +9,16 @@
     direction: rtl;
     background-color: #ffff;
     font-family: "IRANSansXV", sans-serif;
+    color: #000;
+  }
+  .dark body {
+    background-color: #212121;
+    color: #ffffff;
   }
 }
 :root {
+  --header-background: #ffffff;
+  --footer-background: #6a6a7a;
   --primary-50: #e7f8fc;
   --primary-100: #b4ebf6;
   --primary-200: #8fe1f2;
@@ -79,12 +86,16 @@
   --Warning-900: #6b5300;
 }
 .dark {
+  --header-background: #2e2e2e;
+  --footer-background: #4f4f4f;
   --primary-300: #0986a0;
   --primary-500: #07687c;
 }
 @theme {
   --font-IRANSansXV: "IRANSansXV", sans-serif;
 
+  --color-header-background: var(--header-background);
+  --color-footer-background: var(--footer-background);
   --color-primary-50: var(--primary-50);
   --color-primary-100: var(--primary-100);
   --color-primary-200: var(--primary-200);
@@ -154,43 +165,58 @@
 
 @layer components {
   .heading-48 {
-    @apply font-IRANSansXV  text-2xl font-bold;
-    @apply lg:text-5xl;
+    @apply font-IRANSansXV lg:text-5xl text-2xl font-bold;
   }
-   .heading-48-normal {
-    @apply font-IRANSansXV  text-2xl font-normal;
-    @apply lg:text-5xl;
+  .heading-48-normal {
+    @apply font-IRANSansXV lg:text-5xl text-2xl font-normal;
+  }
+  .heading-30 {
+    @apply font-IRANSansXV lg:text-3xl text-2xl font-bold;
+  }
+  .heading-24 {
+    @apply font-IRANSansXV lg:text-2xl text-xl font-bold;
   }
   .heading-22 {
-    @apply font-IRANSansXV  text-[22px] font-semibold;
-    @apply lg:text-[22px];
+    @apply font-IRANSansXV lg:text-[22px] text-[22px] font-semibold;
   }
 
   .heading-20 {
-    @apply font-IRANSansXV  text-lg font-bold;
-    @apply lg:text-xl;
+    @apply font-IRANSansXV lg:text-xl text-lg font-bold;
   }
   .heading-18 {
     @apply font-IRANSansXV  text-lg font-bold;
   }
   .heading-16 {
-    @apply font-IRANSansXV  text-sm font-bold;
-    @apply lg:text-base;
+    @apply font-IRANSansXV lg:text-base text-sm font-bold;
+  }
+  .body-24 {
+    @apply font-IRANSansXV  lg:text-2xl text-xl font-normal;
   }
   .body-20 {
     @apply font-IRANSansXV  text-xl font-normal;
-    
   }
   .body-16 {
-    @apply font-IRANSansXV  text-xs font-normal;
-    @apply lg:text-base;
+    @apply font-IRANSansXV lg:text-base text-xs font-normal;
   }
   .body-18 {
-    @apply font-IRANSansXV  text-base font-normal;
-    @apply lg:text-lg;
+    @apply font-IRANSansXV lg:text-lg text-base font-normal;
+  }
+  .body-14 {
+    @apply font-IRANSansXV lg:text-[14px] text-[14px] font-normal;
+  }
+  .body-14-semibold {
+    @apply font-IRANSansXV lg:text-[14px] text-[14px] font-semibold;
+  }
+  .body-14-bold {
+    @apply font-IRANSansXV lg:text-sm text-xs font-bold;
+  }
+  .body-14-black {
+    @apply font-IRANSansXV lg:text-sm text-xs font-black;
   }
   .caption {
-    @apply font-IRANSansXV text-xs font-normal;
-    @apply lg:text-xs;
+    @apply font-IRANSansXV text-xs lg:text-xs font-normal;
+  }
+  .caption-bold {
+    @apply font-IRANSansXV text-xs lg:text-xs font-bold;
   }
 }

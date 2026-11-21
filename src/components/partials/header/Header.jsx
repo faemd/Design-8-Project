@@ -18,7 +18,7 @@ function Header() {
   };
   return (
     <Container>
-      <div className="flex flex-row  h-22 lg:h-24 rounded-xl shadow-[0_3px_8px_rgba(0,0,0,0.04),0_14px_14px_rgba(0,0,0,0.04)]  justify-between px-4 py-4 relative lg:py-6">
+      <div className="bg-header-background flex flex-row  h-22 lg:h-24 rounded-xl shadow-[0_3px_8px_rgba(0,0,0,0.04),0_14px_14px_rgba(0,0,0,0.04)]  justify-between px-4 py-4 relative lg:py-6">
         <img src={LogoImg} className="hidden lg:block w-58 h-11" />
         <img src={miniLogo} className="w-10 h-10 block lg:hidden" />
         <div className="hidden lg:w-95 lg:h-10 lg:flex lg:justify-between ">
