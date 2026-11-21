@@ -3,15 +3,20 @@ import LogoImg from "@/assets/images/logo.png";
 import namadImg from "@/assets/images/namad.png";
 import { FootersItems } from "@/core/constants/FooterLinks";
 import { FooterSocialMedia } from "@/core/constants/FooterSocialMedia";
-import { HugeiconsIcon } from '@hugeicons/react';
-import{ArrowUp02Icon} from '@hugeicons/core-free-icons';
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowUp02Icon } from "@hugeicons/core-free-icons";
 
 const Footer = () => {
   return (
     <>
       <div className="w-full h-117 bg-[url('@/assets/images/footer.png')] bg-cover bg-center flex flex-col gap-4 items-center justify-around px-10 py-8 mt-10 relative">
-        <div className="bg-primary-300 w-22 h-21 rounded-2xl absolute bottom-102 left-29"> <HugeiconsIcon icon={ArrowUp02Icon} size={50} color="white"/> </div>
-        <div className=" w-full flex justify-around items-center ">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="bg-primary-300 w-22 h-21 rounded-2xl absolute bottom-102 left-29 flex justify-center items-center"
+        >
+          <HugeiconsIcon icon={ArrowUp02Icon} size={45} color="white" />
+        </button>
+        <div className="flex flex-col items-center mt-10 lg:w-full lg:flex lg:flex-row lg:justify-around lg:items-center ">
           <div className="w-71">
             <img src={LogoImg} />
             <p className="text-right text-neutral-600 caption">
@@ -25,15 +30,15 @@ const Footer = () => {
               است.{" "}
             </p>
           </div>
-          <div className="  w-161 flex flex-row items-center justify-around">
+          <div className="hidden lg:w-161 lg:flex lg:flex-row lg:items-start lg:justify-around">
             {FootersItems.map((item, index) => (
-              <div className="flex-start">
+              <div key={index}>
                 {" "}
                 <h3 className="heading-22 text-right text-black border-b-3 border-b-solid border-b-primary-500">
                   {" "}
                   {item.title}{" "}
                 </h3>{" "}
-                <div className="flex flex-col text-base text-neutral-600 font-medium">
+                <div className="flex flex-col body-16 text-neutral-600 ">
                   {FootersItems[index].links.map((item) => (
                     <span key={item}> {item} </span>
                   ))}
@@ -45,7 +50,7 @@ const Footer = () => {
             <img src={namadImg} />
           </div>
         </div>
-        <div className=" w-full h-14 rounded-xl bg-neutral-dark-300 flex items-center justify-center lg:justify-between px-2 caption ">
+        <div className=" w-full h-14 rounded-xl bg-footer-background flex items-center justify-center lg:justify-between px-2 caption ">
           <div className="hidden lg:flex lg:justify-between lg:gap-2">
             <div className="hidden lg:w-5 lg:h-5 lg:rounded-full lg:bg-transparent lg:border lg:border-white lg:border-solid lg:flex lg:items-center lg:justify-center">
               <FooterSign />
