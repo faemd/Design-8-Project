@@ -39,7 +39,7 @@ const HeroSection = () => {
           <h4> +1000 </h4>
           <h4> دانشجوی فعال و شاغل در سرتاسر جهان </h4>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden md:block lg:block">
           <img src={heroImageTwo} />
         </div>
         <div   className="w-57 h-65 bg-neutral-100 rounded-3xl heading-18 text-black text-center flex flex-col  items-center justify-center gap-5 "> 
