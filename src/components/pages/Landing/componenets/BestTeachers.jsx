@@ -32,9 +32,9 @@ const BestTeachers = () => {
               <FallbackImage src={item.pictureAddress} fallbackSrc={teachercard}/>
                 
             </div>
-            <h2 className="heading-30 text-[#272727] text-right">    {item.fullName}   </h2>
+            <h2 className="heading-30 text-[#272727] text-right dark:text-white">    {item.fullName}   </h2>
             {/* <h4 className="body-24 text-[#272727] text-right">   webDesign    </h4> */}
-            <h4 className="body-24 text-[#272727] text-right">   تعداد دوره ها:{item.courseCounts} دوره  </h4>
+            <h4 className="body-24 text-[#272727] text-right dark:text-white">   تعداد دوره ها:{item.courseCounts} دوره  </h4>
         </div>
           ))
         }

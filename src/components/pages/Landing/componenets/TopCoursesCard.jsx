@@ -26,7 +26,7 @@ const TopCoursesCard = () => {
       {/* اطلاعات */}
       <div className="absolute top-40 right-6 w-83 h-47 rounded-lg bg-header-background flex flex-col items-center justify-around p-5">
         <div className="w-full flex items-center justify-between ">
-          <h2 className="heading-20 text-[#272727] "> {item.title} </h2>
+          <h2 className="heading-20 text-[#272727] dark:text-white "> {item.title} </h2>
           <div className="w-25 h-2 bg-Warning-400 rounded-b-full"> </div>
         </div>
         <div className="w-full h-16 flex items-center justify-between border-b-2 border-b-neutral-100 border-b-solid">
