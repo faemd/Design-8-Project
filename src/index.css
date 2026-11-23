@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: "IRANSansXV";
   src: url("./assets/fonts/IRANSansXV.woff2") format("woff2");

@@ -6,10 +6,10 @@ import miniLogo from "@/assets/images/miniLogo.png";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   TextAlignLeftIcon,
-  Moon02Icon,
   Cancel01Icon,
 } from "@hugeicons/core-free-icons";
 import { useState } from "react";
+import ManageTheme from "@/components/common/ManageTheme";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ function Header() {
               className={({ isActive }) =>
                 isActive
                   ? "heading-16 text-primary-600 decoration-solid decoration-primary-600"
-                  : "heading-16 text-black"
+                  : "heading-16"
               }
             >
               {" "}
@@ -38,9 +38,7 @@ function Header() {
           ))}
         </div>
         <div className=" w-58 h-12 flex justify-center gap-2">
-          <div className="hidden lg:w-10 lg:h-10  lg:flex lg:items-center lg:justify-center lg:border lg:border-solid lg:border-neutral-300 lg:rounded-full lg:text-center">
-            <HugeiconsIcon icon={Moon02Icon} size={22} />
-          </div>
+          <ManageTheme/>
           <div className="heading-20 w-36 h-10 lg:w-45 lg:h-12 heading-20  bg-blue-500 text-center text-white rounded-3xl leading-10 lg:leading-12">
             {" "}
             ورود یا ثبت نام{" "}

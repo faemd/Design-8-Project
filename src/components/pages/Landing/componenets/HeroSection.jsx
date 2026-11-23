@@ -6,21 +6,21 @@ const HeroSection = () => {
   return (
     <Container>
       <div className=" flex justify-center items-center ">
-        <h2 className="heading-48 text-[#272727] text-center"> آموزش </h2>
+        <h2 className="heading-48 text-[#272727] text-center dark:text-white"> آموزش </h2>
         <div className="heading-48 text-white text-center rounded-4xl bg-primary-300 p-3">
           {" "}
           برنامه نویسی{" "}
         </div>
-        <h2 className="heading-48 text-[#272727] text-center"> آنلاین آسان </h2>
+        <h2 className="heading-48 text-[#272727] text-center dark:text-white"> آنلاین آسان </h2>
       </div>
       <div className="mx-auto my-7">
-        <h3 className="heading-48-normal text-[#272727] text-center">
+        <h3 className="heading-48-normal text-[#272727] text-center dark:text-white">
           {" "}
           سریع و همیشه همراه شما{" "}
         </h3>
       </div>
       <div className="w-90 h-24 lg:w-177 lg:h-14 mx-auto my-6">
-        <p className="body-18 text-center text-neutral-800">
+        <p className="body-18 text-center text-neutral-800 dark:text-white">
           {" "}
           در وب‌سایت ما می‌توانید دوره‌ها و کلاس‌هایی را پیدا کنید که به شما کمک
           می‌کنند مهارت بیاموزید پیشرفت کنید و در مسیر رشد شخصی و حرفه‌ای سرزنده
